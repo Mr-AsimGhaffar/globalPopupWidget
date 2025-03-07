@@ -41,7 +41,7 @@
           button.appendChild(textNode);
 
           button.addEventListener("click", function () {
-            window.location.href = redirectURL;
+            window.open(redirectURL, "_blank");
           });
 
           document.body.appendChild(button);
