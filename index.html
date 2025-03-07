@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Popup Widget</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      (function () {
+        function loadPopupWidget() {
+          const placement = "right";
+          const text = "Get Started";
+          const textColor = "#ffffff";
+          const bgColor = "#ff5722";
+          const borderRadius = "10px";
+          const redirectURL = "https://example.com";
+
+          const button = document.createElement("div");
+          button.style.position = "fixed";
+          button.style.bottom = "20px";
+          button.style[placement] = "20px";
+          button.style.background = bgColor;
+          button.style.color = textColor;
+          button.style.borderRadius = borderRadius;
+          button.style.padding = "15px 40px";
+          button.style.display = "flex";
+          button.style.alignItems = "center";
+          button.style.gap = "8px";
+          button.style.cursor = "pointer";
+          button.style.boxShadow = "0 4px 8px rgba(0, 0, 0, 0.2)";
+          button.style.fontSize = "18px";
+
+          const textNode = document.createElement("span");
+          textNode.innerText = text;
+          button.appendChild(textNode);
+
+          button.addEventListener("click", function () {
+            window.location.href = redirectURL;
+          });
+
+          document.body.appendChild(button);
+        }
+
+        if (
+          document.readyState === "complete" ||
+          document.readyState === "interactive"
+        ) {
+          loadPopupWidget();
+        } else {
+          window.addEventListener("DOMContentLoaded", loadPopupWidget);
+        }
+      })();
+    </script>
+  </body>
+</html>
