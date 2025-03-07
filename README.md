@@ -16,7 +16,7 @@
 
 To integrate the popup widget into your website, simply add the following script inside your <head> or before the closing <body> tag:
 
-<script
+#### <script
   type="text/javascript"
   defer
   src="https://yourdomain.com/widget/referralPopup.js"
@@ -27,52 +27,7 @@ To integrate the popup widget into your website, simply add the following script
   data-bg-color="#ff5722"
   data-border-radius="10px"
   data-redirect-url="https://example.com"
-></script>
+#### ></script>
 
-### Customization Options
-
-You can modify the widget’s appearance and behavior using the following data- attributes:
-
-Attribute
-
-Description
-
-Default Value
-
-data-placement
-
-Position of the popup (left or right)
-
-right
-
-data-text
-
-Text displayed on the popup button
-
-Get Started
-
-data-text-color
-
-Color of the text
-
-#ffffff
-
-data-icon-src
-
-URL of the icon image
-
-https://via.placeholder.com/20
-
-data-bg-color
-
-Background color of the popup
-
-#ff5722
-
-data-border-radius
-
-Border radius of the popup
-
-10px
 
 ✉️ Need help? Reach out at admin@alisquare.com
